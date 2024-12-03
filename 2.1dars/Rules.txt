@@ -1,0 +1,17 @@
+refernce vs value 
+
+stack | heap
+
+value : int, float, double, bool, char
+refernce : string, object, collections
+
+string => 
+
+* static classdan object olib bo'lmaydi. Ichidagi hamma narsani class nomi nilan ishlatamiz
+
+* non static classdan qaysiki static va non static method va prop lardan tashkil topgan. Class object olsa bo'ladi va object orqali non static method va prop larni ishlatamiz, static method va prop larni class nomi bilan ishlatamiz.
+
+.txt
+
+
+
