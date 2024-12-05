@@ -10,7 +10,11 @@ public class StudentService
     public StudentService()
     {
         studentFilePath = "../../../Data/Students.json";
-        File.WriteAllText(studentFilePath, "[]");
+
+        if(File.Exists(studentFilePath) is false)
+        {
+            File.WriteAllText(studentFilePath, "[]");
+        }
     }
 
     public Student AddStudent(Student student)
