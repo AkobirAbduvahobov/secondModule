@@ -63,7 +63,7 @@ public class StudentService
             return false;
         }
 
-        var index = students.IndexOf(student);
+        var index = students.IndexOf(studentFromDb);
         students[index] = student;
         SaveData(students);
         return true;
