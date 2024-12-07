@@ -1,0 +1,96 @@
+1. parent class faqat 1 ta bo'ladi.
+2. parent class dan ko'p child classlar inherent qilishi mumkin
+
+3. protected toollar agar parent class ni ichida e'lon qilinsa. Faqat Child va nevara, evara childlarda, Parentlarda ishlaydi
+
+////////////////////////////////////
+Part 1 => Types of Inheritance in C#
+
+1. Single Inheritance: A class inherits from one base class.
+
+public class Vehicle { }
+public class Car : Vehicle { }
+
+
+2. Multilevel Inheritance: A class inherits from a derived class.
+
+public class Animal { }
+public class Mammal : Animal { }
+public class Dog : Mammal { }
+
+
+3. Hierarchical Inheritance: Multiple classes inherit from one base class.
+
+public class Shape { }
+public class Circle : Shape { }
+public class Rectangle : Shape { }
+
+
+
+
+////////////////////////////////////////////////
+Part 2 => Method Overriding and Virtual Methods
+
+
+
+public class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Drawing a shape.");
+    }
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a circle.");
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        Shape shape = new Shape();
+        shape.Draw();  // Output: Drawing a shape.
+
+        Shape circle = new Circle();
+        circle.Draw(); // Output: Drawing a circle.
+    }
+}
+
+
+
+////////////////////////////////////////////////
+Part 3 => When Not to Use Inheritance
+
+
+
+If the relationship is not "is-a". Use composition for "has-a" relationships instead.
+
+csharp
+Copy code
+public class Engine { }
+
+public class Car
+{
+    private Engine engine; // Composition
+}
+
+
+
+///////////////////////////////////////////
+Part 4  => Sealed Classes 
+
+* can take object
+* can not be parent class
+
+
+
+Part 5 => ctor
+child class dan object olinganda background da ota class dan ham object olinadi
+
+
+
