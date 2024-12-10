@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace _2._2dars.Api.Services;
 
-public class TestService
+public class TestService : ITestService
 {
     private string testFilePath;
     private List<Test> _tests;

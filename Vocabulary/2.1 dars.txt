@@ -1,0 +1,23 @@
+Nouns
+1.	Class - Sinf
+2.	Method - Metod
+3.	Property - Xususiyat
+4.	Object - Obyekt
+5.	Variable - O'zgaruvchi
+6.	Function - Funksiya
+7.	Parameter - Parametr
+8.	Constructor - Konstruktor
+9.	Loop - Tsikl
+Verbs
+10.	Run project – loyhani ishga tushurish
+11.	Run - yugurmoq
+12.	Define - Aniqlamoq
+13.	Declare - E'lon qilmoq
+14.	Debug - Nosozlikni tuzatmoq
+Adjectives
+16.	Dynamic –o’zgaruvchan
+17.	Static – o’zgarmas
+18.	Abstract - mavhum
+19.	Public - Ommaviy
+20.	Private - Xususiy
+

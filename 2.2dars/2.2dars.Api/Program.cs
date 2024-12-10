@@ -1,15 +1,13 @@
 ﻿using _2._2dars.Api.Models;
 using _2._2dars.Api.Services;
+using System.Runtime.ConstrainedExecution;
 
 namespace _2._2dars.Api;
 
 internal class Program
 {
-    private static string student1UserName = "student1";
-    private static string student1Password = "student1";
-
-    private static string student2UserName = "student2";
-    private static string student2Password = "student2";
+    private static string studentUserName = "student";
+    private static string studentPassword = "student";
 
     private static string teacherUserName = "teacher";
     private static string teacherPassword = "teacher";
@@ -20,6 +18,29 @@ internal class Program
 
     static void Main(string[] args)
     {
+        //YourClass yourClass = new YourClass();
+        //yourClass.Do();
+        //yourClass.Do1();
+        //yourClass.Do2();
+
+        //MyClass myClass = new YourClass();
+
+        //myClass.Do();
+        //myClass.Do1();
+        //myClass.Do2();
+
+
+        //int number;
+        //var consoleValue = Console.ReadLine();
+        //int.TryParse(consoleValue, out number);
+
+        //Console.WriteLine(number);
+
+        //int number = int.Parse(Console.ReadLine());
+        //Console.WriteLine(number);
+
+
+
         //var student1 = new Student()
         //{
         //    FirstName = "Ali",
@@ -100,14 +121,67 @@ internal class Program
             {
                 RunTeacher();
             }
-            else if (userName == student1UserName && password == student1Password)
+            else if (userName == studentUserName && password == studentPassword)
             {
-
+                RunStudent();
             }
-            else if (userName == student2UserName && password == student2Password)
+           
+        }
+    }
+
+    public static void RunStudent()
+    {
+        var teacherService = new TeacherService();
+        IStudentService studentService = new StudentService();
+        var testService = new TestService();
+        Console.Write("Enter id :");
+        Guid id;
+        Guid.TryParse(Console.ReadLine(), out id);
+        var student = studentService.GetById(id);
+
+        while (true)
+        {
+            Console.WriteLine("1. Start test");
+            Console.WriteLine("2. Like teacher");
+            Console.WriteLine("3. Dislike teacher");
+            Console.Write("Enter option :");
+            var option = Console.ReadLine();
+
+            if(option == "1")
             {
+                Console.Clear() ;
+                Console.Write("How many test you want to do :");
+                var amount = int.Parse(Console.ReadLine());
 
+                var tests = testService.GetRandomTests(amount);
+                var correctAnswers = 0;
+                foreach( var test in tests)
+                {
+                    Console.WriteLine(test.QuestionText);
+                    Console.WriteLine($"A) {test.AVariant}");
+                    Console.WriteLine($"B) {test.BVariant}");
+                    Console.WriteLine($"C) {test.CVariant}");
+
+                    Console.Write("Choose answer A/B/C : ");
+                    var answer = Console.ReadLine();
+                    if(test.Answer ==  answer)
+                    {
+                        correctAnswers++;
+                        Console.WriteLine("Correct");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Incorrect, correct answer is : {test.Answer}");
+                    }
+                }
+
+                var res = correctAnswers * 100d / tests.Count;
+                student.Results.Add(res);
+                studentService.UpdateStudent(student);
+                Console.WriteLine($"Final answer : {res}%");
+                Console.ReadKey();
             }
+
         }
     }
 
