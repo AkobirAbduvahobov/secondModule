@@ -1,0 +1,401 @@
+to be - bo'lish
+
+to have - ega bo'lish
+
+to do - qilish
+
+to say - aytmoq
+
+to get - olmoq
+
+to make - qilmoq
+
+to go - borish
+
+to know - bilish
+
+to take - olmoq
+
+to see - ko'rmoq
+
+to come - kelmoq
+
+to think - o'ylamoq
+
+to look - qaramoq
+
+to want - xohlash
+
+to give - bermoq
+
+to use - foydalanmoq
+
+to find - topmoq
+
+to tell - aytmoq
+
+to ask - so'ramoq
+
+to work - ishlamoq
+
+to seem - ko'rinmoq
+
+to feel - his qilmoq
+
+to try - urinish
+
+to leave - tashlamoq
+
+to call - qo'ng'iroq qilmoq
+
+to put - qo'ymoq
+
+to mean - anglatmoq
+
+to keep - saqlamoq
+
+to let - ruxsat bermoq
+
+to begin - boshlash
+
+to help - yordam bermoq
+
+to talk - gaplashmoq
+
+to turn - burilmoq
+
+to start - boshlamoq
+
+to show - ko'rsatmoq
+
+to hear - eshitmoq
+
+to play - o'ynamoq
+
+to run - yugurmoq
+
+to move - ko'chmoq
+
+to like - yoqtirmoq
+
+to live - yashamoq
+
+to believe - ishonmoq
+
+to hold - ushlamoq
+
+to bring - olib kelmoq
+
+to happen - ro'y bermoq
+
+to write - yozmoq
+
+to provide - ta'minlamoq
+
+to sit - o'tirmoq
+
+to stand - turmoq
+
+to lose - yo'qotmoq
+
+to pay - to'lamoq
+
+to meet - uchrashmoq
+
+to include - kiritmoq
+
+to continue - davom ettirmoq
+
+to set - o'rnatmoq
+
+to learn - o'rganmoq
+
+to change - o'zgartirmoq
+
+to lead - boshchilik qilmoq
+
+to understand - tushunmoq
+
+to watch - tomosha qilmoq
+
+to follow - ergashmoq
+
+to stop - to'xtatmoq
+
+to create - yaratmoq
+
+to speak - gapirmoq
+
+to read - o'qimoq
+
+to spend - sarflamoq
+
+to grow - o'smoq
+
+to open - ochmoq
+
+to walk - yurmoq
+
+to win - g'olib bo'lmoq
+
+to offer - taklif qilmoq
+
+to remember - eslamoq
+
+to love - sevmok
+
+to buy - sotib olmoq
+
+to wait - kutmoq
+
+to send - yubormoq
+
+to die - o'lish
+
+to expect - kutmoq
+
+to build - qurmoq
+
+to stay - qolmoq
+
+Nouns (80)
+time - vaqt
+
+person - shaxs
+
+year - yil
+
+way - yo'l
+
+day - kun
+
+thing - narsa
+
+man - erkak
+
+world - dunyo
+
+life - hayot
+
+hand - qo'l
+
+part - qism
+
+child - bola
+
+eye - ko'z
+
+woman - ayol
+
+place - joy
+
+work - ish
+
+week - hafta
+
+case - holat
+
+point - nuqta
+
+government - hukumat
+
+company - kompaniya
+
+number - raqam
+
+group - guruh
+
+problem - muammo
+
+fact - fakt
+
+area - hudud
+
+question - savol
+
+world - dunyo
+
+school - maktab
+
+state - davlat
+
+family - oila
+
+student - talaba
+
+book - kitob
+
+system - tizim
+
+program - dastur
+
+water - suv
+
+room - xona
+
+community - jamiyat
+
+mother - ona
+
+father - ota
+
+face - yuz
+
+door - eshik
+
+friend - do'st
+
+hour - soat
+
+game - o'yin
+
+line - chiziq
+
+end - oxir
+
+member - a'zo
+
+law - qonun
+
+car - mashina
+
+city - shahar
+
+name - ism
+
+power - kuch
+
+country - mamlakat
+
+body - tana
+
+word - so'z
+
+head - bosh
+
+house - uy
+
+service - xizmat
+
+month - oy
+
+side - tomon
+
+kind - tur
+
+president - prezident
+
+team - jamoa
+
+minute - daqiq
+
+idea - g'oya
+
+kid - bola
+
+party - partiya
+
+information - ma'lumot
+
+back - orqa
+
+parent - ota-ona
+
+others - boshqalar
+
+office - ofis
+
+health - salomatlik
+
+person - shaxs
+
+period - davr
+
+level - daraja
+
+policy - siyosat
+
+process - jarayon
+
+question - savol
+
+Adjectives (40)
+good - yaxshi
+
+new - yangi
+
+first - birinchi
+
+last - oxirgi
+
+long - uzoq
+
+great - buyuk
+
+little - kichik
+
+own - o'z
+
+other - boshqa
+
+old - eski
+
+right - to'g'ri
+
+big - katta
+
+high - baland
+
+different - boshqa
+
+small - kichik
+
+large - katta
+
+next - keyingi
+
+early - erta
+
+young - yoshlik
+
+important - muhim
+
+few - oz
+
+public - ommaviy
+
+bad - yomon
+
+same - bir xil
+
+able - qodir
+
+happy - baxtli
+
+clear - aniq
+
+sure - ishonchli
+
+simple - oddiy
+
+strong - kuchli
+
+free - bepul
+
+easy - oson
+
+hard - qattiq
+
+real - haqiqiy
+
+best - eng yaxshi
+
+better - yaxshiroq
+
+low - past
+
+social - ijtimoiy
+
+true - haqiqiy
+
+possible - mumkin

@@ -1,0 +1,399 @@
+Verbs (80)
+to appear - paydo bo'lmoq
+
+to improve - yaxshilamoq
+
+to explain - tushuntirmoq
+
+to decide - qaror qilmoq
+
+to visit - tashrif buyurmoq
+
+to accept - qabul qilmoq
+
+to refuse - rad etmoq
+
+to imagine - tasavvur qilmoq
+
+to agree - rozi bo'lmoq
+
+to suggest - taklif qilmoq
+
+to discover - kashf etmoq
+
+to describe - tasvirlamoq
+
+to include - kiritmoq
+
+to join - qo'shilmoq
+
+to support - qo'llab-quvvatlamoq
+
+to reach - erishmoq
+
+to remind - eslatmoq
+
+to refuse - rad etmoq
+
+to announce - e'lon qilmoq
+
+to apply - murojaat qilmoq
+
+to avoid - oldini olmoq
+
+to build - qurmoq
+
+to carry - tashimoq
+
+to cause - sabab bo'lmoq
+
+to check - tekshirmoq
+
+to choose - tanlamoq
+
+to clean - tozalamoq
+
+to complete - tugatmoq
+
+to create - yaratmoq
+
+to deliver - yetkazmoq
+
+to discover - kashf etmoq
+
+to enjoy - zavqlanmoq
+
+to escape - qochmoq
+
+to follow - ergashmoq
+
+to gather - to'plamoq
+
+to hate - nafratlanmoq
+
+to ignore - e'tiborsiz qoldirmoq
+
+to impress - ta'sir qilmoq
+
+to judge - hakamlik qilmoq
+
+to laugh - kulmoq
+
+to offer - taklif qilmoq
+
+to prepare - tayyorlamoq
+
+to protect - himoya qilmoq
+
+to recognize - tanimoq
+
+to relax - dam olmoq
+
+to repair - ta'mirlamoq
+
+to replace - o'rnini bosmoq
+
+to return - qaytmoq
+
+to survive - omonda qolmoq
+
+to suggest - taklif qilmoq
+
+to suppose - faraz qilmoq
+
+to visit - tashrif buyurmoq
+
+to promise - va'da bermoq
+
+to pronounce - talaffuz qilmoq
+
+to publish - nashr etmoq
+
+to refuse - rad etmoq
+
+to save - saqlamoq
+
+to sell - sotmoq
+
+to serve - xizmat qilmoq
+
+to share - bo'lishmoq
+
+to shout - baqirmoq
+
+to sign - imzo qo'ymoq
+
+to sing - kuylamoq
+
+to stay - qolmoq
+
+to succeed - muvaffaqiyatga erishmoq
+
+to suggest - taklif qilmoq
+
+to support - qo'llab-quvvatlamoq
+
+to suppose - faraz qilmoq
+
+to surprise - ajablantirmoq
+
+to travel - sayohat qilmoq
+
+to translate - tarjima qilmoq
+
+to trust - ishonmoq
+
+to turn - burilmoq
+
+to visit - tashrif buyurmoq
+
+to wait - kutmoq
+
+to win - g'olib bo'lmoq
+
+to wish - xohlamoq
+
+to worry - tashvishlanmoq
+
+to write - yozmoq
+
+to zip - fermuar yopmoq
+
+Nouns (80)
+ability - qobiliyat
+
+accident - baxtsiz hodisa
+
+advice - maslahat
+
+agreement - kelishuv
+
+animal - hayvon
+
+appointment - uchrashuv
+
+area - hudud
+
+argument - bahs
+
+article - maqola
+
+artist - san'atkor
+
+audience - tomoshabinlar
+
+author - muallif
+
+background - fon
+
+behavior - xulq-atvor
+
+birth - tug'ilish
+
+blood - qon
+
+board - taxta
+
+body - tana
+
+book - kitob
+
+boss - boshliq
+
+bottle - shisha
+
+brain - miya
+
+bread - non
+
+building - bino
+
+business - biznes
+
+butterfly - kapalak
+
+calendar - taqvim
+
+camera - kamera
+
+capital - poytaxt
+
+card - kartochka
+
+career - karera
+
+case - ish
+
+castle - qasr
+
+cell - hujayra
+
+center - markaz
+
+chance - imkoniyat
+
+charity - xayriya
+
+choice - tanlov
+
+city - shahar
+
+class - sinf
+
+climate - iqlim
+
+coast - sohil
+
+communication - aloqa
+
+company - kompaniya
+
+competition - musobaqa
+
+conclusion - xulosa
+
+condition - shart
+
+connection - aloqa
+
+conversation - suhbat
+
+country - mamlakat
+
+crime - jinoyat
+
+culture - madaniyat
+
+customer - mijoz
+
+decision - qaror
+
+degree - daraja
+
+design - dizayn
+
+development - rivojlanish
+
+dinner - kechki ovqat
+
+director - direktor
+
+discussion - muhokama
+
+disease - kasallik
+
+dream - tush
+
+driver - haydovchi
+
+editor - muharrir
+
+education - ta'lim
+
+effort - sa'y-harakat
+
+election - saylov
+
+employee - xodim
+
+energy - energiya
+
+engine - dvigatel
+
+environment - atrof-muhit
+
+error - xato
+
+example - misol
+
+exchange - almashish
+
+experience - tajriba
+
+expert - mutaxassis
+
+explanation - tushuntirish
+
+family - oila
+
+farm - ferma
+
+father - ota
+
+Adjectives (40)
+active - faol
+
+amazing - ajoyib
+
+angry - jahldor
+
+available - mavjud
+
+basic - asosiy
+
+beautiful - go'zal
+
+bright - yorqin
+
+careful - ehtiyotkor
+
+comfortable - qulay
+
+common - umumiy
+
+complete - to'liq
+
+creative - ijodkor
+
+dangerous - xatarli
+
+dark - qorong'u
+
+deep - chuqur
+
+difficult - qiyin
+
+dry - quruq
+
+early - erta
+
+economic - iqtisodiy
+
+electric - elektr
+
+exciting - hayajonli
+
+expensive - qimmat
+
+famous - mashhur
+
+fast - tez
+
+friendly - do'stona
+
+funny - kulgili
+
+gentle - muloyim
+
+global - global
+
+happy - baxtli
+
+healthy - sog'lom
+
+historical - tarixiy
+
+huge - ulkan
+
+hungry - och
+
+independent - mustaqil
+
+industrial - sanoat
+
+international - xalqaro
+
+interested - qiziqqan
+
+local - mahalliy
+

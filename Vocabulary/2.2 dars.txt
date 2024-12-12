@@ -1,0 +1,23 @@
+Nouns
+1.	Interface - Interfeys
+2.	Library - Kutubxona
+3.	Array - Massiv
+4.	Exception - Istisno
+5.	Reference - Havola
+6.	Structure - Struktura
+7.	Event - Hodisa
+8.	Thread - Ip ,O’zaro jaroyon
+9.	Attribute - Atribut
+10.	Environment - Muhit
+Verbs
+11.	Override - Qayta yozish
+12.	Implement - Amalga oshirish
+13.	Access - Kirish
+14.	Return - Qaytarish
+15.	Instantiate - Namuna yaratish
+Adjectives
+16.	Virtual - Virtual
+17.	Readonly - Faqat o‘qish mumkin
+18.	Synchronous - Sinxron
+19.	Asynchronous - Asinxron
+20.	Optional - Majburiy emas
