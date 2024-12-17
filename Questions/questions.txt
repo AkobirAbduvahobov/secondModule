@@ -1,0 +1,19 @@
+1. string haqida gapirib bering.
+2. stringBuilder haqida gapirib bering.
+3. array vs list
+4. ref vs out
+5. static
+6. class
+7. object
+8. abstraction
+9. inheritence
+10. encapsulation
+11. OOP
+12. Interface
+13. value type
+14. ref type
+15. Casting types
+16. Repository & service pattern
+17. Dto
+18. Constructor
+19. object

@@ -9,11 +9,16 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        IUserService userService = new UserService();
+        var responseQueueName = "salom";
+        var replyTo = $"{responseQueueName}{Guid.NewGuid()}";
 
-        var users = userService.GetUsers();
+        Console.WriteLine(replyTo);
 
-  
+        //IUserService userService = new UserService();
+
+        //var users = userService.GetUsers();
+
+
 
         //UserCreateDto dto1 = new UserCreateDto()
         //{
