@@ -17,3 +17,10 @@
 17. Dto
 18. Constructor
 19. object
+20. Interface vs Abstract class
+21. Abstract class
+22. Has a, is a
+23. Generic
+24. Struct
+
+
