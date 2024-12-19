@@ -16,9 +16,12 @@ internal class Program
 
         Console.WriteLine(myList.GetItemAt(1));
         Console.WriteLine(myList.GetItemAt(3));
-        Console.WriteLine(myList.GetItemAt(5));
-        Console.WriteLine(myList.GetItemAt(9));
-
+        Console.WriteLine(myList.GetItemAt(4));
+        
+        // RemoveItemAt(int index)
+        // AddItemsRange(int[] nums)
+        // ReplaceAllItems(int oldElement, int newElement)
+        // GetItemIndex(int item)
 
 
     }
