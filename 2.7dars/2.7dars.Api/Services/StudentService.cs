@@ -120,6 +120,41 @@ public class StudentService : IStudentService
         };
     }
 
+    private Student MyConverter<T>(T inputObj)
+    {
+        if(inputObj is StudentCreateDto obj)
+        {
+            return new Student()
+            {
+                Id = Guid.NewGuid(),
+                FirstName = obj.FirstName,
+                LastName = obj.LastName,
+                Age = obj.Age,
+                Password = obj.Password,
+                Email = obj.Email,
+                Gender = (DataAccess.Enums.Gender)obj.Gender,
+                Degree = (DataAccess.Enums.DegreeStatus)obj.Degree,
+            };
+        }
+
+        if(inputObj is StudentUpdateDto updateingObj)
+        {
+            return new Student()
+            {
+                Id = updateingObj.Id,
+                FirstName = updateingObj.FirstName,
+                LastName = updateingObj.LastName,
+                Age = updateingObj.Age,
+                Password = updateingObj.Password,
+                Email = updateingObj.Email,
+                Gender = (DataAccess.Enums.Gender)updateingObj.Gender,
+                Degree = (DataAccess.Enums.DegreeStatus)updateingObj.Degree,
+            };
+        }
+
+        throw new InvalidOperationException($"Cannot convert from type {typeof(T).Name} to Student.");
+    }
+
     private StudentGetDto ConvertToDto(Student student)
     {
         return new StudentGetDto
