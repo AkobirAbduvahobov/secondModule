@@ -22,5 +22,9 @@
 22. Has a, is a
 23. Generic
 24. Struct
+25. Partial class
+26. Exception
+27. try, catch, finally
+28. Extension methods
 
 

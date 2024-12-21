@@ -1,4 +1,6 @@
-﻿namespace _2._8dars.Api;
+﻿using System.Text;
+
+namespace _2._8dars.Api;
 
 internal class Program
 {
@@ -10,12 +12,23 @@ internal class Program
         //List<int> list = new List<int>();
 
 
-        //var myList = new MyList(10);
-        //myList.AddItem(15);
-        //myList.AddItem(88);
-        //myList.AddItem(77);
-        //myList.AddItem(23);
-        //myList.AddItem(82);
+        var myList = new MyList<int>(5);
+        myList.AddItem(15);
+        myList.AddItem(88);
+        myList.AddItem(77);
+        myList.AddItem(23);
+        myList.AddItem(82);
+
+        //myList.SortAsSelected();
+        myList.SortAsBuble();
+
+        for (var i = 0; i < myList.GetCount(); i++)
+        {
+            Console.WriteLine(myList.GetItemAt(i));
+        }
+
+       
+
 
 
         //Console.WriteLine(myList.GetCount());
@@ -48,9 +61,21 @@ internal class Program
         //list2.ToArray();
         //list3.ToArray();
 
-        Point3D point2D = new Point3D(7,6);
-        var res = point2D.DistanceFromOrigin();
-        Console.WriteLine(res);
+        //Point3D point2D = new Point3D(7,6);
+        //var res = point2D.DistanceFromOrigin();
+        //Console.WriteLine(res);
+
+        //Person person1 = new Person()
+        //{
+        //    Name = "Foo1",
+        //    Age = 2,
+        //};
+
+        //Person person2 = new Person()
+        //{
+        //    Name = "Foo2",
+        //    Age = 5,
+        //};
 
 
 
