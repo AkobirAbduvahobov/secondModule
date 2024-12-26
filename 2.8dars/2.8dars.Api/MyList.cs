@@ -176,7 +176,7 @@ public class MyList<T> : IMyList<T>
         {
             for(var j = 0; j < count - i - 1; j++)
             {
-                if(Convert.ToInt32(items[j]) < Convert.ToInt32(items[j+1]))
+                if(Convert.ToInt32(items[j]) > Convert.ToInt32(items[j+1]))
                 {
                     var temp = items[j];
                     items[j] = items[j+1];
