@@ -31,5 +31,14 @@
 31. Generic, Non-generic collection
 32. Dictionary, HashTable
 33. ArrayList
+34. Constructor vs static constructor
+35. Access modifier
+36. LIFO vs FIFO
+37. sealed class
+38. LinkedList
+39. HashSet
+40. SortedSet
+41. null coalescing => ??, ternary operator => ?
+
 
 
