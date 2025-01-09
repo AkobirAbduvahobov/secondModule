@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCRUD.Server", "MusicCRUD.Server\MusicCRUD.Server.csproj", "{80285CC1-615C-4569-995F-8E6B21BE2265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MucisCRUD.Service", "MucisCRUD.Service\MucisCRUD.Service.csproj", "{2151EA6F-4412-4B00-B639-E54CB71B597E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCRUD.DataAccess", "MusicCRUD.DataAccess\MusicCRUD.DataAccess.csproj", "{3F675C96-4D3E-4255-AFD7-6FD971F9A5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicCRUD.Repository", "MusicCRUD.Repository\MusicCRUD.Repository.csproj", "{CF14ECE0-1CAD-41F4-9EE4-2F213F79EDDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80285CC1-615C-4569-995F-8E6B21BE2265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80285CC1-615C-4569-995F-8E6B21BE2265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80285CC1-615C-4569-995F-8E6B21BE2265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80285CC1-615C-4569-995F-8E6B21BE2265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2151EA6F-4412-4B00-B639-E54CB71B597E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2151EA6F-4412-4B00-B639-E54CB71B597E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2151EA6F-4412-4B00-B639-E54CB71B597E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2151EA6F-4412-4B00-B639-E54CB71B597E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F675C96-4D3E-4255-AFD7-6FD971F9A5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F675C96-4D3E-4255-AFD7-6FD971F9A5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F675C96-4D3E-4255-AFD7-6FD971F9A5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F675C96-4D3E-4255-AFD7-6FD971F9A5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF14ECE0-1CAD-41F4-9EE4-2F213F79EDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF14ECE0-1CAD-41F4-9EE4-2F213F79EDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF14ECE0-1CAD-41F4-9EE4-2F213F79EDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF14ECE0-1CAD-41F4-9EE4-2F213F79EDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

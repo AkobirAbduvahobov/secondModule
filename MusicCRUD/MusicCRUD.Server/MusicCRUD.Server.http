@@ -1,0 +1,6 @@
+@MusicCRUD.Server_HostAddress = http://localhost:5044
+
+GET {{MusicCRUD.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
