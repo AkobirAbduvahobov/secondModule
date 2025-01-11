@@ -1,11 +1,77 @@
-﻿using System.Runtime.CompilerServices;
-using test;
+﻿using test;
 
 class Program
 {
     static void Main(string[] args)
     {
+        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "example.json");
 
+        if (!File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, "[]");
+        }
+
+        //using(StreamReader sr = new StreamReader(filePath))
+        //{
+
+        //}
+
+        using(StreamWriter writer = new StreamWriter(filePath, append:true))
+        {
+            writer.WriteLine("salom");
+        }
+    }
+
+    public static void Foo2()
+    {
+        string filePath = @"D:\OnlineCource\video1.mp4";
+        string extension = Path.GetExtension(filePath);
+        string savingPath = Path.Combine(Directory.GetCurrentDirectory(), "video5" + extension);
+
+
+        using (FileStream sourceStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+        using (FileStream destinationStream = new FileStream(savingPath, FileMode.Create, FileAccess.Write))
+        {
+            sourceStream.CopyTo(destinationStream);
+        }
+
+        Console.WriteLine("File copied successfully!");
+
+    }
+
+
+    public static void Foo1()
+
+    {
+        string filePath = @"D:\OnlineCource\video1.mp4";
+        string extension = Path.GetExtension(filePath);
+        string savingPath = Path.Combine(Directory.GetCurrentDirectory(), "video1" + extension);
+
+        const int bufferSize = 81920000; // 80 KB buffer size
+        byte[] buffer = new byte[bufferSize];
+        int bytesRead;
+
+
+        using (FileStream sourceStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
+        using (FileStream destinationStream = new FileStream(savingPath, FileMode.Create, FileAccess.Write))
+        {
+            while ((bytesRead = sourceStream.Read(buffer, 0, buffer.Length)) > 0)
+            {
+                Console.WriteLine(destinationStream.Position);
+                destinationStream.Write(buffer, 0, bytesRead);
+            }
+        }
+
+        Console.WriteLine("File copied successfully!");
+
+        StreamReader streamReader = new StreamReader(filePath);
+        StreamWriter streamWriter = new StreamWriter(savingPath);
+    }
+
+
+
+    public static void LinqTask()
+    {
         Student student1 = new Student()
         {
             Age = 45,
@@ -61,17 +127,7 @@ class Program
 
         var nums = new List<int>() { 3, 4, 5, 1, 6, 7 };
 
-        var res23 = nums.
-                
-
         int a = 5;
-
-
-
-
-
-
-
     }
 }
 

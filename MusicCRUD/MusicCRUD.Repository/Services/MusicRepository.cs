@@ -5,15 +5,22 @@ namespace MusicCRUD.Repository.Services;
 
 public class MusicRepository : IMusicRepository
 {
-    private readonly string _path;
+    private readonly string _filePath;
+    private readonly string _directoryPath;
     private List<Music> _music;
     public MusicRepository()
     {
-        _path = Path.Combine(Directory.GetCurrentDirectory(), "Music.json");
+        _filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "Music.json");
+        _directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "Data");
 
-        if(!File.Exists(_path))
+        if(!Directory.Exists(_directoryPath))
         {
-            File.WriteAllText(_path, "[]"); 
+            Directory.CreateDirectory(_directoryPath);
+        }
+
+        if (!File.Exists(_filePath))
+        {
+            File.WriteAllText(_filePath, "[]");
         }
 
         _music = GetAllMusic();
@@ -35,7 +42,7 @@ public class MusicRepository : IMusicRepository
 
     public List<Music> GetAllMusic()
     {
-        var musicJson = File.ReadAllText(_path);
+        var musicJson = File.ReadAllText(_filePath);
         var musicList = JsonSerializer.Deserialize<List<Music>>(musicJson);
         return musicList;
     }
@@ -43,7 +50,7 @@ public class MusicRepository : IMusicRepository
     public Music GetMusicById(Guid id)
     {
         var music = _music.FirstOrDefault(x => x.Id == id);
-        if(music == null)
+        if (music == null)
         {
             throw new Exception($"Music with id {id} not found");
         }
@@ -53,13 +60,16 @@ public class MusicRepository : IMusicRepository
 
     public void UpdateMusic(Music music)
     {
-        throw new NotImplementedException();
+        var musicFromDb = GetMusicById(music.Id);
+        var index = _music.IndexOf(musicFromDb);
+        _music[index] = music;
+        SaveData();
     }
 
     private void SaveData()
     {
         var musicJson = JsonSerializer.Serialize(_music);
-        File.WriteAllText(_path, musicJson);
+        File.WriteAllText(_filePath, musicJson);
     }
 }
 

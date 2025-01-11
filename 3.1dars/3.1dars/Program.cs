@@ -10,9 +10,9 @@ internal class Program
         // person => person.Age
 
         Student student1 = new Student("Lobar", "Odilova", 26, 100);
-        Student student2 = new Student("Davron", "Rustamov", 17, 2000);
+        Student student2 = new Student("Davron", "Rustamov", 26, 2000);
         Student student3 = new Student("Rustam", "Elbekov", 15, 700);
-        Student student4 = new Student("Qodir", "Odilov", 35, 10000);
+        Student student4 = new Student("Qodir", "Odilov", 26, 10000);
         Student student5 = new Student("Ali", "Odilov", 22, 8000);
 
         List<Student> students = new List<Student>();
@@ -60,7 +60,9 @@ internal class Program
 
         var res20 = students.Single(st => st.Age < 17);
         
-        var res21 = students.SingleOrDefault(st => st.Age < 10);
+        var res21 = students.SingleOrDefault(st => Is21(st.Age));
+
+        var res22 = students.OrderBy(st => st.Age).ThenBy(stu => stu.FirstName).ToList();
 
 
 
@@ -78,8 +80,8 @@ internal class Program
 
     }
 
-    public static bool Is18(int age)
+    public static bool Is21(int age)
     {
-        return age > 18;
+        return age < 10;
     }
 }
