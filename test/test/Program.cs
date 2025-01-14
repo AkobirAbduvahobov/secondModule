@@ -4,22 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "example.json");
 
-        if (!File.Exists(filePath))
-        {
-            File.WriteAllText(filePath, "[]");
-        }
+        Foo1();
 
-        //using(StreamReader sr = new StreamReader(filePath))
+        //string filePath = Path.Combine(Directory.GetCurrentDirectory(), "example.json");
+
+        //if (!File.Exists(filePath))
         //{
-
+        //    File.WriteAllText(filePath, "[]");
         //}
 
-        using(StreamWriter writer = new StreamWriter(filePath, append:true))
-        {
-            writer.WriteLine("salom");
-        }
+        ////using(StreamReader sr = new StreamReader(filePath))
+        ////{
+
+        ////}
+
+        //using(StreamWriter writer = new StreamWriter(filePath, append:true))
+        //{
+        //    writer.WriteLine("salom");
+        //}
     }
 
     public static void Foo2()
@@ -41,17 +44,16 @@ class Program
 
 
     public static void Foo1()
-
     {
         string filePath = @"D:\OnlineCource\video1.mp4";
         string extension = Path.GetExtension(filePath);
-        string savingPath = Path.Combine(Directory.GetCurrentDirectory(), "video1" + extension);
+        string savingPath = Path.Combine(Directory.GetCurrentDirectory(), "video2" + extension);
 
-        const int bufferSize = 81920000; // 80 KB buffer size
+        const int bufferSize = 102400000; // 
         byte[] buffer = new byte[bufferSize];
         int bytesRead;
 
-
+        int i = 0;
         using (FileStream sourceStream = new FileStream(filePath, FileMode.Open, FileAccess.Read))
         using (FileStream destinationStream = new FileStream(savingPath, FileMode.Create, FileAccess.Write))
         {

@@ -15,6 +15,14 @@ public class MusicController : ControllerBase
         _musicService = new MusicService();
     }
 
+
+    [HttpPost("uploadFile")]
+    public void UploadFile(IFormFile formFile)
+    {
+        formFile.OpenReadStream();
+    }
+
+
     [HttpPost("addMusic")]
     public Guid PostMusic(MusicDto musicDto)
     {
