@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
 
-        Foo1();
+        //Foo1();
 
         //string filePath = Path.Combine(Directory.GetCurrentDirectory(), "example.json");
 
@@ -23,6 +23,64 @@ class Program
         //{
         //    writer.WriteLine("salom");
         //}
+
+        //string path = @"D:\api";
+        //GetFullNameOfFiles(path);
+
+        string path = @"D:\exampleData\testTXT.txt";
+        StreamReaderInfo(path);
+
+    }
+
+    public static void StreamReaderInfo(string filePath)
+    {
+        string destinationFilePath = @"D:\exampleData\result2.txt";
+        using (StreamReader streamReader = new StreamReader(filePath))
+        {
+            using(StreamWriter streamWriter = new StreamWriter(destinationFilePath, true))
+            {
+                var line = string.Empty;
+                while (true)
+                {
+                    line = streamReader.ReadLine();
+                    if (line == null) break;
+                    streamWriter.WriteLine(line);
+                }
+            }
+        }
+    }
+
+    public static List<string> GetFullNameOfFiles(string folderPath)
+    {
+        if (string.IsNullOrEmpty(folderPath) || !Directory.Exists(folderPath))
+        {
+            throw new ArgumentException("Invalid folder path.");
+        }
+
+        // Use recursion to get all files including those in subdirectories
+        var allFiles = new List<string>();
+        GetFilesRecursively(folderPath, allFiles);
+        return allFiles;
+    }
+
+    private static void GetFilesRecursively(string path, List<string> fileList)
+    {
+        try
+        {
+            // Add files in the current directory
+            var res = Directory.GetFiles(path);
+            fileList.AddRange(res);
+
+            // Recursively process subdirectories
+            foreach (var directory in Directory.GetDirectories(path))
+            {
+                GetFilesRecursively(directory, fileList);
+            }
+        }
+        catch (UnauthorizedAccessException)
+        {
+            // Handle access issues gracefully (skip inaccessible directories)
+        }
     }
 
     public static void Foo2()
@@ -39,9 +97,7 @@ class Program
         }
 
         Console.WriteLine("File copied successfully!");
-
     }
-
 
     public static void Foo1()
     {
@@ -69,8 +125,6 @@ class Program
         StreamReader streamReader = new StreamReader(filePath);
         StreamWriter streamWriter = new StreamWriter(savingPath);
     }
-
-
 
     public static void LinqTask()
     {

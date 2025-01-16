@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFileManagement.Server", "WebFileManagement.Server\WebFileManagement.Server.csproj", "{113606FC-0503-4ABB-8519-EAA072DE4252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFileManagement.Service", "WebFileManagement.Service\WebFileManagement.Service.csproj", "{677A3E4D-45DC-4F84-9EC0-F844013D38EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFileManagement.StorageBroker", "WebFileManagement.StorageBroker\WebFileManagement.StorageBroker.csproj", "{372E64C2-53D0-434B-B770-079B692FD3BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{113606FC-0503-4ABB-8519-EAA072DE4252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113606FC-0503-4ABB-8519-EAA072DE4252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113606FC-0503-4ABB-8519-EAA072DE4252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113606FC-0503-4ABB-8519-EAA072DE4252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677A3E4D-45DC-4F84-9EC0-F844013D38EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677A3E4D-45DC-4F84-9EC0-F844013D38EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677A3E4D-45DC-4F84-9EC0-F844013D38EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677A3E4D-45DC-4F84-9EC0-F844013D38EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{372E64C2-53D0-434B-B770-079B692FD3BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{372E64C2-53D0-434B-B770-079B692FD3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{372E64C2-53D0-434B-B770-079B692FD3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{372E64C2-53D0-434B-B770-079B692FD3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

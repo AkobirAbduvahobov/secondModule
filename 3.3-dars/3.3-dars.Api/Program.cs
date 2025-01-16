@@ -1,13 +1,83 @@
-﻿namespace _3._3_dars.Api;
+﻿using System.Reflection.PortableExecutable;
+
+namespace _3._3_dars.Api;
 
 internal class Program
 {
     static void Main(string[] args)
     {
+        string directoryPath = @"D:\Projects\.Net Projects(Console)\secondModule\3.3-dars\3.3-dars.Api\bin\Debug\net8.0\example.txt";
+        Console.WriteLine(directoryPath);
+        var root = Directory.GetParent(directoryPath);
+        Console.WriteLine(root.FullName);
 
-        var filePath = @"D:\OnlineCource\test1.mp4";
-        CopyFileWithChunks(filePath, "file7");
+
     }
+
+
+    public static List<int> GetNumberOfDigitsEachLine(string filePath)
+    {
+        var numberOfDigitsEachLine = new List<int>();
+
+        using(var reader = new StreamReader(filePath))
+        {
+            var line = string.Empty;
+            while(true)
+            {
+                line = reader.ReadLine();   
+                if(line == null) break;
+                var count = line.Count(character => char.IsDigit(character));
+                numberOfDigitsEachLine.Add(count);
+            }
+        }
+
+        return numberOfDigitsEachLine;
+    }
+
+
+    public static void StreamReaderInformation(string filePath, string destinationFilePath)
+    {
+        using(var streamReader = new StreamReader(filePath))
+        {
+            using(var streamWriter =  new StreamWriter(destinationFilePath, true))
+            {
+                var line = string.Empty;
+                while (true)
+                {
+                    line = streamReader.ReadLine();
+                    if (line == null) break;
+                    streamWriter.WriteLine(line);
+                }
+            }
+        }
+    }
+
+
+
+    public static void DisplayAllFiles(string folderPath)
+    {
+        var files = new List<string>();
+        FillAllFiles(folderPath, files);
+
+        foreach (var file in files)
+        {
+            Console.WriteLine(file);
+        }
+    }
+
+    private static void FillAllFiles(string folderPath, List<string> files)
+    {
+        string[] filesInPath = Directory.GetFiles(folderPath);
+        string[] foldersInPath = Directory.GetDirectories(folderPath);
+        files.AddRange(filesInPath);
+
+        foreach (var folder in foldersInPath)
+        {
+            FillAllFiles(folder, files);
+        }
+    }
+
+
 
     public static void CopyFileWithChunks(string filePath, string newFileName)
     {
